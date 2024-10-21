@@ -5,8 +5,8 @@ test.describe("Button user interactions", () => {
   let button: Locator;
 
   test.beforeEach(async ({ page }) => {
-    await page.goto("https://playwright.dev/");
-    button = page.getByLabel(/light mode/i);
+    await page.goto("https://johnnygerard.github.io/bug-playwright-button-click/");
+    button = page.getByTestId("button");
   });
 
   test("Click", async ({ page }) => {
